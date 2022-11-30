@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -9,11 +10,13 @@ export const Breadcrumb = () => {
 		<div className="text-sm breadcrumbs">
 			<ul>
 				<li>
-					<a>Home</a>
+					<Link href="/">Home</Link>
 				</li>
 				{crumbs.map((elem) => (
 					<li key={elem}>
-						<a href={elem} className="capitalize">{elem}</a>
+						<a href={elem} className="capitalize">
+							{elem}
+						</a>
 					</li>
 				))}
 			</ul>
