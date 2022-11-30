@@ -67,7 +67,7 @@ const Login = (props: any) => {
 										className="input input-bordered"
 									/>
 									<label className="label"> Don&apos;t have an account  
-										<a href="#" className="label-text-alt link link-hover">
+										<a href="/signup" className="label-text-alt link link-hover">
 											Sign Up?
 										</a>
 									</label>

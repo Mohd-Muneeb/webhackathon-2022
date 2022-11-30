@@ -11,7 +11,7 @@ const Dashboard = (props: any) => {
 		} else {
 			return (
 				<div className="min-h-[90vh] p-12 md:p-16 ">
-					<div className="text-center w-[80vw] ml-[5vw] p-16 rounded-2xl from-[hsl(var(--p))] to-[hsl(var(--s))] bg-gradient-to-tr">
+					<div className="text-center w-[80vw] md:ml-[5vw] p-16 rounded-2xl from-[hsl(var(--p))] to-[hsl(var(--s))] bg-gradient-to-tr">
 						<h1 className="font-semibold text-3xl cursive mb-8 text-[hsl(var(--nf))]">
 							Choose in between the wide array of wallpapers we have!
 						</h1>

@@ -3,7 +3,7 @@ import React from "react";
 const MainCard = (props: any) => {
 	// style={background-image: src("https://placeimg.com/400/225/arch")}
 	return (
-		<div className="card w-96 flex flex-col justify-center items-center bg-base-100 h-full shadow-xl ">
+		<div className="card w-96 flex flex-col justify-center m-4 items-center bg-base-100 h-full shadow-xl ">
 			<div className="rounded-xl m-4 mt-8">
 				<img src="https://placeimg.com/400/300/arch" alt="" className="rounded-xl" />
 			</div>
