@@ -1,8 +1,21 @@
+import Link from "next/link";
 import React from "react";
+import { getAuth, signOut } from "firebase/auth";
+import auth from "../auth";
 
 const Navbar = () => {
+	const Logout = (e: any) => {
+		signOut(auth)
+			.then(() => {
+				// Sign-out successful.
+			})
+			.catch((error) => {
+				// An error happened.
+			});
+	};
+
 	return (
-		<div className="navbar rounded-2xl ml-[5vw] w-[90vw] bg-base-200 mt-4">
+		<div className="navbar rounded-2xl w-[90vw] ml-[5vw] bg-base-200 mt-4">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -44,7 +57,9 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div className="navbar-center">
-				<a className="btn btn-ghost normal-case text-xl">Wally</a>
+				<Link className="btn btn-ghost normal-case text-xl" href="/">
+					Wally
+				</Link>
 			</div>
 			<div className="navbar-end">
 				<div className="avatar">

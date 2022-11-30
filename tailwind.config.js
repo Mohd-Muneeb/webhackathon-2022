@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./src/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+	content: ["./components/**/*.{js,jsx,ts,tsx}" , "./pages/**/*.{js,jsx,ts,tsx}"],
 	theme: {
 		extend: {
 			fontFamily: {
-				// Montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
 				opensans: ["Open Sans"],
 			},
 		},
@@ -18,6 +17,6 @@ module.exports = {
 		logs: true,
 		rtl: false,
 		prefix: "",
-		darkTheme: "cupcake",
+		darkTheme: "dark",
 	},
 };
