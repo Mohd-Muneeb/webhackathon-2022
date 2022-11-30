@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Desktop = () => {
-  return (
-    <div className='bg-pink-100 text-black'>Desktop</div>
-  )
-}
+	return <div>Desktop</div>;
+};
 
-export default Desktop
+export default Desktop;
