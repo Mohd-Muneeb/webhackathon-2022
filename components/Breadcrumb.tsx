@@ -14,9 +14,9 @@ export const Breadcrumb = () => {
 				</li>
 				{crumbs.map((elem) => (
 					<li key={elem}>
-						<a href={elem} className="capitalize">
+						<Link href={elem} className="capitalize">
 							{elem}
-						</a>
+						</Link>
 					</li>
 				))}
 			</ul>

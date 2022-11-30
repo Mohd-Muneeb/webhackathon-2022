@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Loading from "../components/Loading";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import auth from "../auth";
+import Link from "next/link";
 
 const Login = (props: any) => {
 	const [Email, setEmail] = useState("");
@@ -66,10 +67,12 @@ const Login = (props: any) => {
 										onChange={(e) => handlePassword(e)}
 										className="input input-bordered"
 									/>
-									<label className="label"> Don&apos;t have an account  
-										<a href="/signup" className="label-text-alt link link-hover">
+									<label className="label">
+										{" "}
+										Don&apos;t have an account
+										<Link href="/signup" className="label-text-alt link link-hover">
 											Sign Up?
-										</a>
+										</Link>
 									</label>
 								</div>
 								<div className="form-control mt-6">

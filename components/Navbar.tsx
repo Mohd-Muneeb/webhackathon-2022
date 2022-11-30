@@ -43,15 +43,15 @@ const Navbar = () => {
 							<Link href="/">Homepage</Link>
 						</li>
 						<li>
-							<a href="https://www.mohdmuneeb.live" target="_blank" rel="noreferrer">
+							<Link href="https://www.mohdmuneeb.live" target="_blank" rel="noreferrer">
 								Portfolio
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/contact">Contact</a>
+							<Link href="/contact">Contact</Link>
 						</li>
 						<li>
-							<a href="/about">About</a>
+							<Link href="/about">About</Link>
 						</li>
 					</ul>
 				</div>

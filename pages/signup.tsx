@@ -3,6 +3,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../auth";
 import { Breadcrumb } from "../components/Breadcrumb";
 import Loading from "../components/Loading";
+import Link from "next/link";
 
 const SignUp = (props: any) => {
 	const [Email, setEmail] = useState("");
@@ -75,9 +76,9 @@ const SignUp = (props: any) => {
 						<div>
 							<h1>
 								Already have an account?{" "}
-								<a href="/login" className="hover:underline">
+								<Link href="/login" className="hover:underline">
 									Login here!
-								</a>
+								</Link>
 							</h1>
 						</div>
 						<div>

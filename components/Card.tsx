@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Card = (props: any) => {
@@ -19,12 +20,12 @@ const Card = (props: any) => {
 						<p className="text-[hsl(var(--s))]">Total downloads: {props.downloads}</p>
 					</div>
 					<div className="bottom-0 flex flex-col md:flex-row gap-4">
-						<a href={props.image} download>
+						<Link href={props.image} download>
 							<button className="btn btn-primary">Download</button>
-						</a>
-						<a href={props.image} target="_blank" rel="noreferrer">
+						</Link>
+						<Link href={props.image} target="_blank" rel="noreferrer">
 							<button className="btn btn-primary btn-outline">View Source</button>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const MainCard = (props: any) => {
@@ -17,13 +18,13 @@ const MainCard = (props: any) => {
 				</div>
 			</div>
 			{props.type == "Desktop" ? (
-				<a href="/desktop">
+				<Link href="/desktop">
 					<button className="btn mb-8 btn-primary">View more</button>
-				</a>
+				</Link>
 			) : (
-				<a href="/mobile">
+				<Link href="/mobile">
 					<button className="btn mb-8 btn-primary">View more</button>
-				</a>
+				</Link>
 			)}
 		</div>
 	);
