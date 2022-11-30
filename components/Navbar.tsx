@@ -11,7 +11,7 @@ const Navbar = () => {
 			})
 			.catch((error) => {
 				// An error happened.
-				alert(error.message)
+				alert(error.message);
 			});
 	};
 
@@ -40,19 +40,18 @@ const Navbar = () => {
 						className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 					>
 						<li>
-							<a>Homepage</a>
+							<Link href="/">Homepage</Link>
 						</li>
 						<li>
-							<a>Portfolio</a>
+							<a href="https://www.mohdmuneeb.live" target="_blank" rel="noreferrer">
+								Portfolio
+							</a>
 						</li>
 						<li>
-							<a>Settings</a>
+							<a href="/contact">Contact</a>
 						</li>
 						<li>
-							<a>Contact</a>
-						</li>
-						<li>
-							<a>About</a>
+							<a href="/about">About</a>
 						</li>
 					</ul>
 				</div>
